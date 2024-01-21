@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Колебательный контур 🇷🇺</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div style="display: flex; flex-direction: row;">
+        <div style="display: flex;flex-direction: column;">
+            <div style="display: flex;flex-wrap: nowrap;flex-direction: column;">
+                <canvas id="amperage" width="382" height="250"></canvas>
+                <canvas id="voltage" width="382" height="250"></canvas>
+            </div>
+        </div>
+
+        <div>
+            <canvas id="main" width="500" height="500"></canvas>
+
+            <div style="display: flex; justify-content: center; flex-direction: column;">
+                <table>
+                    <tr>
+                        <td>L</td>
+                        <td><input type="text" id="inductance" placeholder="Индуктивность" value="1"></td>
+                        <td>ω</td>
+                        <td id="frequency">-</td>
+                    </tr>
+                    <tr>
+                        <td>C</td>
+                        <td><input type="text" id="capacitance" placeholder="Ёмкость" value="1"></td>
+                        <td>W</td>
+                        <td id="max_energy">-</td>
+                    </tr>
+                    <tr>
+                        <td>U</td>
+                        <td><input type="text" id="max_voltage" placeholder="Напряжение" value="1000"></td>
+                        <td>q</td>
+                        <td id="max_charge">-</td>
+                    </tr>
+                </table>
+                <button id="control" style="width: 100%;">Старт</button>
+            </div>
+        </div>
+
+        <div style="display: flex;flex-direction: column;">
+            <div style="display: flex;flex-wrap: nowrap;flex-direction: column;">
+                <canvas id="energies" width="382" height="250"></canvas>
+                <canvas id="charge" width="382" height="250"></canvas>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

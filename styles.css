@@ -1,0 +1,42 @@
+:root {
+    --first: rgb(211, 211, 211);
+    --second: rgb(218, 218, 218);
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    background-color: var(--first);
+}
+
+canvas {
+    background-color: var(--first);
+}
+
+input {
+    border-style: unset;
+    border-color: var(--second);
+    background-color: inherit;
+    text-align: center;
+    width: 100px;
+}
+
+td,
+button {
+    border-style: unset;
+    border-radius: 10px;
+    height: 40px;
+    text-align: center;
+    width: 25%;
+    background-color: var(--second);
+}
